@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fed2eb;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(Avenir_Regular.ttf);
+}
+
+@font-face {
+    font-family: AvenirLight;
+    src: url(Avenir_Light.ttf);
+}
+
+.p1 {
+    font-family: AvenirLight;
+    color: black;
+    font-size: 1.25em;
+    margin: 0;
+}
+
+.p2 {
+    font-family: AvenirLight;
+    color: black;
+    font-size: 1em;
+    margin: 0;
+}
+
+.button {
+    width: 25px;
+    height: 25px;
+    font-family: Avenir;
+    color: black;
+    font-size: 1.5em;
+    background: #fed2eb;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: rotate(-10deg)
+}
+
+.chapter {
+    /* background: lightcyan; */
+    width: 100%;
+    height: 100vh;
+    border-bottom: solid 1px black;
+    display: flex;
+    flex-direction: row;
+}
+
+.writing {
+    /* background: lightgoldenrodyellow; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    overflow-y: scroll;
+    border-right: solid black 1px;
+}
+
+.paragraph {
+    /* background: lightsalmon; */
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    padding-right: 125px;
+}
+
+.section {
+    /* background: lightskyblue; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.section2 {
+    /* background: lightskyblue; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.sectionimage {
+    height: 100%;
+    width: auto;
+}
+
+.instruction {
+    /* background: lightgoldenrodyellow; */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: Avenir;
+    color: black;
+    font-size: 1em;
+}
+
+.instruction2 {
+    /* background: lightgoldenrodyellow; */
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-family: Avenir;
+    color: black;
+    font-size: 1em;
+}
+
+.instruction3 {
+    /* background: lightgoldenrodyellow; */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: Avenir;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+}
+
+.footer {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backtotop {
+    font-family: Avenir;
+    font-size: 1em;
+    color: black;
+}
+
+.document {
+    max-height: 100%;
+    object-fit: contain;
+}
+
+@media screen and (max-width:1500px), screen and (max-height: 900px) {
+
+.p1 {
+    font-size: 1.15em;
+}
+
+.p2 {
+    font-size: .90em;
+}
+
+}
+
+@media screen and (max-width:1000px), screen and (max-height: 700px) {
+
+.p1 {
+    font-size: 1em;
+}
+
+.p2 {
+    font-size: .75em;
+}
+
+}
+
+@media screen and (max-width:750px) {
+
+body {
+    padding-top: 50px;
+}
+
+.p1 {
+    font-size: .90em;
+}
+
+.p2 {
+    font-size: .75em;
+}
+
+.chapter {
+    flex-direction: column;
+    height: auto;
+}
+
+.writing {
+    width: 100%;
+    height: auto;
+    border-right: 0px;
+    border-bottom: 1px solid black;
+}
+
+.section {
+    width: 100%;
+    height: 500px;
+}
+
+.section2 {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+
+}
+
+.paragraph {
+    padding: 5px;
+    padding-right: 5px;
+}
+
+.instruction {
+    display: none;
+}
+
+.instruction2 {
+    display: none;
+}
+
+.instruction3 {
+    display: none;
+}
+
+}
