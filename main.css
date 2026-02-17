@@ -150,6 +150,22 @@ body {
     object-fit: contain;
 }
 
+a:link {
+  color: rgb(0, 0, 0);
+}
+
+a:visited {
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  color: rgb(0, 0, 0);
+}
+
+a:active {
+  color: rgb(0, 0, 0);
+} 
+
 @media screen and (max-width:1500px), screen and (max-height: 900px) {
 
 .p1 {
